@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sahl sale</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="header-cont">
+        <div class="top-header">
+          <div class="container">
+            <div class="nav-header">
+              <figure class="img-logo">
+                <a href="#"><img src="images/logo.svg" /></a>
+              </figure>
+              <div class="search-section">
+                <form class="search-form">
+                  <input
+                    class="search-input"
+                    type="text"
+                    name=""
+                    value=""
+                    placeholder="ابحث"
+                  />
+                  <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="header-icons">
+                <a href="#" class="add-to">
+                  <i class="fa-solid fa-bookmark"></i>
+                  <span class="user-anc">المفضلة</span>
+                </a>
+                <a href="#" class="add-to">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="user-anc">نبهني</span>
+                  <span class="counter">1</span>
+                </a>
+                <a href="#" class="add-to hide-sm">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="user-anc">الحساب</span>
+                </a>
+                <div class="mode">
+                  <input
+                    type="checkbox"
+                    class="darkmode-input"
+                    id="darkmode-toggle"
+                  />
+                  <label for="darkmode-toggle" class="toggle">
+                    <svg
+                      class="dark-mode-toggle__icon dark-mode-toggle__icon--moon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <defs>
+                        <mask id="mask">
+                          <rect
+                            x="0"
+                            y="0"
+                            width="100%"
+                            height="100%"
+                            fill="white"
+                          />
+                          <circle
+                            class="dark-mode-toggle__cut-out"
+                            r="6"
+                            cx="24"
+                            cy="10"
+                            fill="black"
+                          />
+                        </mask>
+                      </defs>
+                      <circle
+                        class="dark-mode-toggle__center-circle"
+                        r="6"
+                        cx="12"
+                        cy="12"
+                        fill="currentColor"
+                        mask="url(#mask)"
+                      />
+                      <g
+                        class="dark-mode-toggle__rays"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <line x1="12" x2="12" y1="3" y2="1" />
+                        <line x1="21" x2="23" y1="12" y2="12" />
+                        <line x1="12" x2="12" y1="21" y2="23" />
+                        <line x1="1" x2="3" y1="12" y2="12" />
+                      </g>
+                      <g
+                        class="dark-mode-toggle__rays"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        transform="rotate(45 12 12)"
+                      >
+                        <line x1="12" x2="12" y1="3" y2="1" />
+                        <line x1="21" x2="23" y1="12" y2="12" />
+                        <line x1="12" x2="12" y1="21" y2="23" />
+                        <line x1="1" x2="3" y1="12" y2="12" />
+                      </g>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlay-box2"></div>
+        </div>
+        <nav>
+          <div class="container">
+            <div class="navgition">
+              <ul class="big-menu list-unstyled">
+                <li class="cat-li">
+                  <a href="#" class="cat-anchor"> الرئيسية </a>
+                </li>
+                <li class="cat-li">
+                  <a href="#" class="cat-anchor"> الأقسام </a>
+                </li>
+                <li class="cat-li">
+                  <a href="#" class="cat-anchor"> أضف اعلان </a>
+                </li>
+                <li class="cat-li">
+                  <a href="#" class="cat-anchor"> المزادات </a>
+                </li>
+                <li class="cat-li">
+                  <a href="#" class="cat-anchor"> الحساب </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="menu-bar">
+      <div>
+        <a href="#" class="active"
+          ><i class="fa-solid fa-house"></i><span>الرئيسية</span></a
+        >
+      </div>
+      <div>
+        <a href="#"><i class="fa-solid fa-grid-2"></i><span>الأقسام</span></a>
+      </div>
+      <div>
+        <a href="#" class="add-icon"
+          ><span class="add-plus"><i class="fa-solid fa-plus"></i></span
+          ><span>أضف</span></a
+        >
+      </div>
+      <div>
+        <a href="#"><i class="fa-solid fa-gavel"></i><span>المزادات</span></a>
+      </div>
+      <div>
+        <a href="#"
+          ><i class="fa-solid fa-circle-user"></i><span>الحساب</span></a
+        >
+      </div>
+    </div>
+    <!-- header section     -->
+    <!-- content section -->
+    <section class="content-section">
+      <div class="container">
+        <div class="upper-header">
+          <button class="back-btn">
+            <i class="fa-regular fa-arrow-right"></i>
+          </button>
+          <h3 class="page-title">سيارات للبيع</h3>
+          <div class="empty"></div>
+        </div>
+        <div class="search-custom">
+          <form class="search-form">
+            <input
+              class="search-input"
+              type="text"
+              name=""
+              value=""
+              placeholder="ابحث"
+            />
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="product-cont">
+          <form action="">
+            <div class="product-btn-filter">
+              <button class="filter-btn active">الكل</button>
+              <button class="filter-btn">بيع</button>
+              <button class="filter-btn">مزاد</button>
+            </div>
+            <div class="product-select-filter">
+              <!--  4 select input -->
+            </div>
+          </form>
+          <div class="product-grid">
+            <a href="#" class="product-item">
+              <div class="product-img">
+                <figure><img src="images/01.jpg" alt="product" /></figure>
+                <div class="timer">00:15:30</div>
+                <div class="live-dot"></div>
+              </div>
+              <div class="product-content">
+                <div class="product-type">
+                  <span>يباني</span> - <span>لكزس</span>
+                </div>
+                <h3 class="product-name">سيارة لكزس RX 2025</h3>
+                <div class="product-status">
+                  السوم واصل : <span>2100 د.ك</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="product-item">
+              <div class="product-img">
+                <figure><img src="images/01.jpg" alt="product" /></figure>
+                <button class="add-fav">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="product-content">
+                <div class="product-type">
+                  <span>يباني</span> - <span>لكزس</span>
+                </div>
+                <h3 class="product-name">سيارة لكزس RX 2025</h3>
+                <div class="product-info">
+                  <span>2100 د.ك</span>
+                  <div class="date">منذ 1 يوم</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content section -->
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <div class="copy-flex">
+          <div class="copy-right">
+            جميع الحقوق محفوظة © <span>sahl sale</span>
+          </div>
+          <div class="design-text">
+            صنع تصميم وتطوير
+            <a href="#"
+              ><img src="images/rayan.png" alt="rayan" class="rayan-img"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- arrow to top -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

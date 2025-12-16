@@ -1,0 +1,121 @@
+.page-ancor {
+  @include flexCenter;
+  margin: 0 auto 20px;
+  background-color: #d9d9d9;
+  color: $main;
+  height: 56px;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 18px;
+  @include tr;
+  border: none;
+  outline: none;
+  max-width: 400px;
+  &:hover {
+    color: $white;
+    background-color: $main;
+  }
+}
+.search-custom {
+  width: 100%;
+  margin: 0 auto 12px;
+  @include min-992 {
+    max-width: 50%;
+  }
+}
+.company-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  @include max-991 {
+    grid-template-columns: 1fr;
+  }
+  .company-item {
+    margin: 0;
+  }
+}
+.company-item {
+  display: flex;
+  // align-items: center;
+  gap: 7px;
+  background-color: $secondary;
+  border: 1px solid $border;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  figure {
+    width: 46px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    @include flexCenter;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #a09f9f33;
+    img {
+      @include tr;
+      width: 100%;
+    }
+  }
+  &:hover img {
+    transform: scale(1.05);
+  }
+  i {
+    font-size: 20px;
+    color: $main;
+    padding-top: 4px;
+  }
+}
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: $text;
+}
+.company-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: $text;
+}
+.company-num {
+  font-weight: 400;
+  font-size: 14px;
+  color: $text;
+}
+.product-btn-filter {
+  margin: 20px auto;
+  gap: 7px;
+  @include min-992 {
+    max-width: 50%;
+    gap: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-btn {
+  @include flexCenter;
+  flex: 1;
+  margin: 0 auto 20px;
+  background-color: #d9d9d9;
+  color: $sec;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  @include tr;
+  &:hover,
+  &.active {
+    color: $white;
+    background-color: $main;
+  }
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  @include max-991 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
