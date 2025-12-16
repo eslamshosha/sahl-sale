@@ -2137,11 +2137,6 @@ textarea.form-input {
 .company-item:hover img {
   transform: scale(1.05);
 }
-.company-item i {
-  font-size: 20px;
-  color: var(--main-color);
-  padding-top: 4px;
-}
 
 .company-info {
   display: flex;
@@ -2154,6 +2149,13 @@ textarea.form-input {
   font-weight: 700;
   font-size: 16px;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.company-name i {
+  font-size: 20px;
+  color: var(--main-color);
 }
 
 .company-num {
@@ -2206,4 +2208,113 @@ textarea.form-input {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.product-center {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 82px;
+}
+.product-center a,
+.product-center button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.product-center a:hover,
+.product-center button:hover {
+  color: var(--main-color);
+  outline: none;
+}
+.product-center a i,
+.product-center button i {
+  font-size: 22px;
+}
+
+.upper-header:has(.product-center) .back-btn {
+  margin-inline-end: 59px;
+}
+
+.product--detail-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .product--detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.product--detail-grid .main-slider .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--white-color);
+}
+.product--detail-grid .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: transparent;
+  border-color: var(--white-color);
+}
+.product--detail-grid .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  background-color: var(--white-color);
+}
+.product--detail-grid .add-fav {
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  z-index: 9;
+  inset-inline-end: 20px;
+  bottom: 0;
+  top: unset;
+}
+
+.slider-cont {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.detail-content .price {
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+.detail-type {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.detail-name {
+  font-weight: 900;
+  font-size: 22px;
+  color: var(--sec-color);
+  margin: 0;
+}
+.dark-mode .detail-name {
+  color: var(--white-color);
+}
+
+.detail-date {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--sec-color);
+}
+.dark-mode .detail-date {
+  color: var(--white-color);
 }/*# sourceMappingURL=main.css.map */

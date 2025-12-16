@@ -59,11 +59,7 @@
   &:hover img {
     transform: scale(1.05);
   }
-  i {
-    font-size: 20px;
-    color: $main;
-    padding-top: 4px;
-  }
+  
 }
 .company-info {
   display: flex;
@@ -75,6 +71,13 @@
   font-weight: 700;
   font-size: 16px;
   color: $text;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  i {
+    font-size: 20px;
+    color: $main;
+  }
 }
 .company-num {
   font-weight: 400;
@@ -116,6 +119,105 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   @include max-991 {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.product-center {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 82px;
+  a,
+  button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    background-color: transparent;
+    border: none;
+    color: $text;
+    font-weight: 400;
+    font-size: 12px;
+    @include tr;
+    outline: none;
+    &:hover {
+      color: $main;
+      outline: none;
+    }
+    i {
+      font-size: 22px;
+    }
+  }
+}
+.upper-header:has(.product-center) {
+  .back-btn {
+    margin-inline-end: 59px;
+  }
+}
+.product--detail-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  @include max-991 {
+    grid-template-columns: 1fr;
+  }
+  .main-slider .swiper-pagination .swiper-pagination-bullet {
+    background-color: $white;
+  }
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: transparent;
+    border-color: $white;
+    &::after {
+      background-color: $white;
+    }
+  }
+  .add-fav {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    z-index: 9;
+    inset-inline-end: 20px;
+    bottom: 0;
+    top: unset;
+  }
+}
+.slider-cont {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .price {
+    font-weight: 900;
+    font-size: 24px;
+    color: $main;
+  }
+}
+.detail-type {
+  font-weight: 400;
+  font-size: 14px;
+  color: $text;
+}
+.detail-name {
+  font-weight: 900;
+  font-size: 22px;
+  color: $sec;
+  margin: 0;
+  .dark-mode & {
+    color: $white;
+  }
+}
+.detail-date {
+  font-weight: 400;
+  font-size: 14px;
+  color: $sec;
+  .dark-mode & {
+    color: $white;
   }
 }
