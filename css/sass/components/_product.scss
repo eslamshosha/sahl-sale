@@ -36,7 +36,7 @@
 }
 .company-item {
   display: flex;
-  // align-items: center;
+  align-items: center;
   gap: 7px;
   background-color: $secondary;
   border: 1px solid $border;
@@ -59,7 +59,6 @@
   &:hover img {
     transform: scale(1.05);
   }
-  
 }
 .company-info {
   display: flex;
@@ -163,6 +162,9 @@
   @include max-991 {
     grid-template-columns: 1fr;
   }
+  .main-slider {
+    margin-top: 0;
+  }
   .main-slider .swiper-pagination .swiper-pagination-bullet {
     background-color: $white;
   }
@@ -219,5 +221,89 @@
   color: $sec;
   .dark-mode & {
     color: $white;
+  }
+}
+.detail-box {
+  width: 100%;
+  gap: 7px;
+  background-color: $secondary;
+  border: 1px solid $border;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: $text;
+  }
+  .desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text;
+  }
+  .row-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 47%;
+    justify-content: flex-start;
+  }
+  .label {
+    font-weight: bold;
+    color: #333;
+    min-width: 81px;
+    text-align: start;
+    white-space: nowrap;
+    color: $sec;
+    .dark-mode & {
+      color: $white;
+    }
+  }
+  .value {
+    color: $text;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+.contact-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 40px auto 0;
+  a {
+    height: 50px;
+    border-radius: 15px;
+    width: 100%;
+    @include flexCenter;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $white;
+    @include tr;
+    i {
+      font-size: 14px;
+    }
+    &.phone-link {
+      background-color: $main;
+    }
+    &.whats-link {
+      background-color: #29a71a;
+    }
+    &:hover {
+      color: $white;
+      background-color: $sec;
+    }
   }
 }

@@ -2112,6 +2112,7 @@ textarea.form-input {
 
 .company-item {
   display: flex;
+  align-items: center;
   gap: 7px;
   background-color: var(--secondary-color);
   border: 1px solid var(--border-color);
@@ -2256,6 +2257,9 @@ textarea.form-input {
     grid-template-columns: 1fr;
   }
 }
+.product--detail-grid .main-slider {
+  margin-top: 0;
+}
 .product--detail-grid .main-slider .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--white-color);
 }
@@ -2317,4 +2321,90 @@ textarea.form-input {
 }
 .dark-mode .detail-date {
   color: var(--white-color);
+}
+
+.detail-box {
+  width: 100%;
+  gap: 7px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.detail-box .title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+.detail-box .desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.detail-box .row-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.detail-box .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 47%;
+  justify-content: flex-start;
+}
+.detail-box .label {
+  font-weight: bold;
+  color: #333;
+  min-width: 81px;
+  text-align: start;
+  white-space: nowrap;
+  color: var(--sec-color);
+}
+.dark-mode .detail-box .label {
+  color: var(--white-color);
+}
+.detail-box .value {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contact-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+.contact-btns a {
+  height: 50px;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+.contact-btns a i {
+  font-size: 14px;
+}
+.contact-btns a.phone-link {
+  background-color: var(--main-color);
+}
+.contact-btns a.whats-link {
+  background-color: #29a71a;
+}
+.contact-btns a:hover {
+  color: var(--white-color);
+  background-color: var(--sec-color);
 }/*# sourceMappingURL=main.css.map */
