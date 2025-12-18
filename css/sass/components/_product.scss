@@ -385,3 +385,115 @@
   z-index: 9;
   @include flexCenter;
 }
+.contributors-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-inline-end: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contributor {
+  background: rgba($color: #8bc4ff, $alpha: 0.1);
+  border-radius: 8px;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .time {
+    font-size: 12px;
+    color: $sec;
+    font-weight: 400;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .text strong {
+    font-size: 14px;
+    color: $sec;
+    font-weight: 800;
+  }
+  .text small {
+    font-size: 12px;
+    color: $sec;
+    font-weight: 400;
+  }
+  img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+}
+
+.auction-action {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 15px;
+  max-width: 500px;
+  margin: 30px auto 0;
+  .position-relative {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    background-color: $secondary;
+    border: 1px solid $border;
+    border-radius: 15px;
+    height: 50px;
+    padding: 0 30px;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: $sec;
+    @include tr;
+    html[dir="rtl"] & {
+      direction: rtl;
+    }
+  }
+
+  .auction-btn {
+    background-color: transparent;
+    color: $main;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none !important;
+    border: none;
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 10px;
+    transform: translateY(-50%);
+  }
+  .add {
+    background: $main;
+    color: $white;
+    border: none;
+    outline: none !important;
+    height: 50px;
+    border-radius: 15px;
+    @include flexCenter;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 92px;
+    flex-shrink: 0;
+    @include tr;
+    &:hover {
+      background-color: $sec;
+    }
+  }
+}
