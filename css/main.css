@@ -2611,4 +2611,54 @@ html[dir=rtl] .auction-action input {
 }
 .auction-action .add:hover {
   background-color: var(--sec-color);
+}
+
+.id-upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .id-upload {
+    flex-direction: column;
+  }
+}
+
+.upload-card {
+  width: 100%;
+  background: var(--secondary-color);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  min-height: 130px;
+}
+.upload-card input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.upload-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--sec-color);
+  margin: 0;
+}
+.dark-mode .upload-card p {
+  color: var(--white-color);
+}
+
+.add-span {
+  color: var(--main-color);
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */

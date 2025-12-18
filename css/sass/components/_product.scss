@@ -497,3 +497,50 @@
     }
   }
 }
+.id-upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include max-991 {
+    flex-direction: column;
+  }
+}
+
+.upload-card {
+  width: 100%;
+  background: $secondary;
+  border-radius: 15px;
+  border: 1px solid $border;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  min-height: 130px;
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+.upload-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: $sec;
+  margin: 0;
+  .dark-mode & {
+    color: $white;
+  }
+}
+
+.add-span {
+  color: $main;
+  font-size: 24px;
+}
